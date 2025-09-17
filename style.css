@@ -71,13 +71,23 @@ body{
         width: 100%;
     }
     .menu .logo label{
-        display: flex;
+        display:block;
         cursor: pointer;
         position: relative;
         width: 30px;
         height: 30px;
-
     }
-
+    .logo{
+        position: relative;
+    }
+   .menu .logo label::before {
+    position: absolute;
+    content: "\f0c9";               /* fa-bars icon */
+    font-family: "Font Awesome 7 Free"; /* v7 এ family এর নাম বদলেছে */
+    font-weight: 900;               /* solid icons এর জন্য */
+    font-size: 32px;
+    top: 0;
+    left: 0;
+   }
     
 }

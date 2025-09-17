@@ -89,5 +89,23 @@ body{
     top: 0;
     left: 0;
    }
-    
+   .menu .items{
+    width: 100%;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+   }
+   .menu .item{
+    width: 100%;
+    padding: 15px;
+    border-radius: 0;
+    border-top: 0.5mm solid rgb(52,53,71);
+   }
+   #menu:checked ~ .items{
+    max-height: 500px;
+   }
+   #menu:checked ~ .logo label::before{
+    content: "\f00d";
+   } 
 }
